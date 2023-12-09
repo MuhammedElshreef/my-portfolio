@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script defer src="./main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100"
+    />
+  </head>
+  <body>
+    <!-- navBar -->
+    <section>
+      <div class="fixed top-0 min-w-full z-50 bg-black lg:bg-transparent">
+        <div
+          class="flex justify-between items-center lg:py-8 py-4 transition-all duration-500 lg:px-12 px-4"
+          id="navBar"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="white"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+            />
+          </svg>
+          <!-- navigate links -->
+          <ul class="hidden lg:flex gap-4 text-[#ecedee] uppercase">
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <!-- burger menu -->
+          <label class="lg:hidden swap swap-rotate text-white">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" id="burger-btn" />
+
+            <!-- hamburger icon -->
+            <svg
+              class="swap-off fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+              />
+            </svg>
+
+            <!-- close icon -->
+            <svg
+              class="swap-on fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <polygon
+                points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+              />
+            </svg>
+          </label>
+        </div>
+
+        <div
+          class="bg-black border-t-[1px] border-gray-600 lg:border-none"
+          id="burger-menu"
+        >
+          <ul
+            class="flex flex-col items-center gap-4 text-[#ecedee] uppercase hidden py-6"
+            id="burger-list"
+          >
+            <li><a href="#about" id="about-link">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <p class="opacity-0 hidden">qweq</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-[url('./public/images/mountain.jpg')] bg-fixed">
+        <div
+          class="w-full min-h-screen flex items-center justify-center bg-black/40 group"
+        >
+          <div
+            class="animation-down transition-all duration-1000 -translate-y-36 opacity-0 flex flex-col gap-6 items-center justify-center"
+          >
+            <p class="text-[#fefefe] lg:text-6xl text-4xl font-lato font-light">
+              HI, I'M MUHAMMED
+            </p>
+            <p class="text-light-gray font-robot-slab">FRONT-END DEVELOPER</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about me -->
+    <section id="about">
+      <div class="bg-white py-24">
+        <div class="container flex flex-col items-center gap-8 justify-center">
+          <span
+            class="text-4xl font-light uppercase text-black animation transition-all duration-1000 opacity-0"
+            >About me</span
+          >
+          <p
+            class="font-robot-slab text-center lg:w-1/2 text-[#747474] animation transition-all duration-1000 opacity-0"
+          >
+            Hello! My name is Muhammed Alsayed and I am a front-end developer
+            who is looking to make a change for the community, interested in
+            programming, open to learning everything about technology,
+            specifically web fields with good knowledge in front-end
+            development, and a fast self-learner. I believe in knowledge
+            transfer and can easily collaborate and share knowledge with my
+            colleagues and learn from them.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end of about me -->
+    <!-- skills  -->
+    <section id="skills">
+      <div class="bg-light-gray">
+        <div
+          class="container flex flex-col gap-16 justify-center items-center py-24"
+        >
+          <span
+            class="text-4xl font-lato font-light uppercase text-black animation transition-all duration-1000 opacity-0"
+            >My skills
+          </span>
+          <div class="flex items-center gap-6 flex-wrap">
+            <div
+              class="w-24 h-24 animation transition-all duration-[1500ms] opacity-0"
+            >
+              <img
+                src="./public/images/html-logo.png"
+                class="grayscale hover:grayscale-0 transition-all duration-500 hover:cursor-pointer"
+                alt="html logo"
+              />
+            </div>
+            <div
+              class="w-24 h-24 animation transition-all duration-[2000ms] opacity-0"
+            >
+              <img
+                src="./public/images/css-logo.png"
+                class="grayscale hover:grayscale-0 transition-all duration-500 hover:cursor-pointer"
+                alt="css logo"
+              />
+            </div>
+            <div
+              class="w-24 h-24 animation transition-all duration-[2500ms] opacity-0"
+            >
+              <img
+                src="./public/images/js-logo.png"
+                class="grayscale hover:grayscale-0 transition-all duration-500 hover:cursor-pointer"
+                alt="js logo"
+              />
+            </div>
+            <div
+              class="w-24 h-24 animation transition-all duration-[3000ms] opacity-0"
+            >
+              <img
+                src="./public/images/tailwind-logo.png"
+                class="grayscale hover:grayscale-0 transition-all duration-500 hover:cursor-pointer"
+                alt="tailwind logo"
+              />
+            </div>
+            <div
+              class="w-24 h-24 animation transition-all duration-[3500ms] opacity-0"
+            >
+              <img
+                src="./public/images/vue-logo.png"
+                class="grayscale hover:grayscale-0 transition-all duration-1000 hover:cursor-pointer"
+                alt="vue logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of skills -->
+    <!-- resume -->
+    <section>
+      <div
+        class="bg-[url('./public/images/desk-image.jfif')] bg-fixed bg-contain"
+      >
+        <div
+          class="flex flex-col gap-6 justify-center items-center bg-black/60 py-12 backdrop-blur-sm"
+        >
+          <p
+            class="text-[#ecedee] uppercase lg:text-4xl text-2xl font-lato font-light"
+          >
+            check out my resume
+          </p>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1wsKHILa6SeeqSYQTlYIHU4jldX2VBMts"
+            class="uppercase text-[#B7B7B7] px-6 py-2 font-robot-slab font-light border-2 border-[#ecedee] hover:px-10 hover:cursor-pointer transition-all duration-300"
+          >
+            Take a copy
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- projects section -->
+    <section id="projects">
+      <div class="bg-white py-24 flex flex-col gap-12">
+        <div
+          class="flex flex-col gap-4 items-center justify-center animation transition-all duration-1000 opacity-0"
+        >
+          <p class="font-light lg:text-5xl text-4xl font-lato text-black">
+            WHAT I'VE DONE
+          </p>
+          <p class="font-light text-gray-600 font-robot-slab">
+            (more coming soon)
+          </p>
+        </div>
+        <div
+          class="container grid gap-y-8 lg:gap-x-8 lg:grid-cols-3 lg:items-center lg:justify-center animation transition-all duration-1000 opacity-0"
+        >
+          <div
+            onclick="movie_project.showModal()"
+            class="w-full h-[200px] relative group bg-[url('./public/images/movie-image.png')] bg-contain bg-no-repeat hover:cursor-pointer"
+          >
+            <div
+              class="w-full h-0 group-hover:h-3/4 bg-black/80 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="w-6 h-6 opacity-0 group-hover:opacity-100 transition-colors duration-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute bottom-0 bg-blue-800 h-0 group-hover:h-1/4 w-full group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <p
+                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white uppercase"
+              >
+                movie clone
+              </p>
+            </div>
+          </div>
+          <div
+            onclick="knight_project.showModal()"
+            class="w-full h-[200px] relative group bg-[url('./public/images/knight-image.png')] bg-contain bg-no-repeat hover:cursor-pointer"
+          >
+            <div
+              class="w-full h-0 group-hover:h-3/4 bg-black/80 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="w-6 h-6 opacity-0 group-hover:opacity-100 transition-colors duration-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute bottom-0 bg-blue-800 h-0 group-hover:h-1/4 w-full group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <p
+                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white uppercase"
+              >
+                Knight landing page
+              </p>
+            </div>
+          </div>
+          <div
+            onclick="easy_bank_project.showModal()"
+            class="w-full h-[200px] relative group bg-[url('./public/images/easy-image.png')] bg-contain hover:cursor-pointer"
+          >
+            <div
+              class="w-full h-0 group-hover:h-3/4 bg-black/80 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white "
+                class="w-6 h-6 opacity-0 group-hover:opacity-100 transition-colors duration-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute bottom-0 bg-blue-800 h-0 group-hover:h-1/4 w-full group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <p
+                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white uppercase"
+              >
+                easy bank
+              </p>
+            </div>
+          </div>
+          <div
+            onclick="space_tourism_project.showModal()"
+            class="w-full h-[200px] relative group bg-[url('./public/images/space-tourism-image.png')] bg-contain hover:cursor-pointer"
+          >
+            <div
+              class="w-full h-0 group-hover:h-3/4 bg-black/80 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="w-6 h-6 opacity-0 group-hover:opacity-100 transition-colors duration-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute bottom-0 bg-blue-800 h-0 group-hover:h-1/4 w-full group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <p
+                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white uppercase"
+              >
+                space tourism
+              </p>
+            </div>
+          </div>
+          <div
+            onclick="fylo_project.showModal()"
+            class="w-full h-[200px] relative group bg-[url('./public/images/fylo-image.png')] bg-contain hover:cursor-pointer"
+          >
+            <div
+              class="w-full h-0 group-hover:h-3/4 bg-black/80 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="w-6 h-6 opacity-0 group-hover:opacity-100 transition-colors duration-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute bottom-0 bg-blue-800 h-0 group-hover:h-1/4 w-full group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <p
+                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white uppercase"
+              >
+                fylo
+              </p>
+            </div>
+          </div>
+          <div
+            onclick="loop_studios_project.showModal()"
+            class="w-full h-[200px] relative group bg-[url('./public/images/loopStudios-image.png')] bg-contain hover:cursor-pointer"
+          >
+            <div
+              class="w-full h-0 group-hover:h-3/4 bg-black/80 group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white "
+                class="w-6 h-6 opacity-0 group-hover:opacity-100 transition-colors duration-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"
+                />
+              </svg>
+            </div>
+            <div
+              class="absolute bottom-0 bg-blue-800 h-0 group-hover:h-1/4 w-full group-hover:opacity-100 transition-all duration-700 flex items-center justify-center"
+            >
+              <p
+                class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white uppercase"
+              >
+                loop Studios
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- projects modal -->
+      <!-- movie modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="movie_project" class="modal">
+        <div class="modal-box bg-white p-0">
+          <div
+            class="flex flex-col items-center justify-center bg-[#f0f0f0] container py-4 relative"
+          >
+            <form method="dialog" class="absolute right-4 top-4">
+              <button method="dialog" class="outline-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  class="w-8 h-8 stroke-slate-400 hover:stroke-slate-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </form>
+            <div class="flex flex-col gap-4 uppercase text-center">
+              <span class="text-2xl font-lato">Movie clone</span>
+              <p class="font-robot-slab font-light">web app</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <img src="./public/images/movie-image.png" alt="movie-image" />
+            <p class="px-4 text-center">
+              movie clone is a web application that was built by vue I wanted to
+              build this web app to test my skills on vue and fetching data I
+              used vue router for routing and pinia for the state management
+            </p>
+            <div
+              class="flex gap-4 justify-center items-center uppercase py-6 lg:pl-4"
+            >
+              <a
+                href="http://movie-clone-iota.vercel.app/"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >visit site</a
+              >
+              <span>or</span>
+              <a
+                href="https://github.com/MuhammedElshreef/movie-clone"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >view source</a
+              >
+            </div>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button class="hover:cursor-default">close</button>
+        </form>
+      </dialog>
+      <!-- end of movie modal -->
+      <!-- knight modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="knight_project" class="modal">
+        <div class="modal-box bg-white p-0">
+          <div
+            class="flex flex-col items-center justify-center bg-[#f0f0f0] container py-4 relative"
+          >
+            <form method="dialog" class="absolute right-4 top-4">
+              <button method="dialog" class="outline-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  class="w-8 h-8 stroke-slate-400 hover:stroke-slate-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </form>
+            <div class="flex flex-col gap-4 uppercase text-center">
+              <span class="text-2xl font-lato">Knight</span>
+              <p class="font-robot-slab font-light">landing page</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <img src="./public/images/knight-image.png" alt="knight image" />
+            <p class="px-4 text-center">
+              knight is a landing page website It was built by vanilla js and
+              tailwindcss I built this website to test my skills on tailwind
+            </p>
+            <div
+              class="flex gap-4 justify-center items-center uppercase py-6 lg:pl-4"
+            >
+              <a
+                href="https://knight-landing-page.netlify.app/"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >visit site</a
+              >
+              <span>or</span>
+              <a
+                href="https://github.com/MuhammedElshreef/knight-landing-page"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >view source</a
+              >
+            </div>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button class="hover:cursor-default">close</button>
+        </form>
+      </dialog>
+      <!-- end of knight modal -->
+      <!-- easy bank modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="easy_bank_project" class="modal">
+        <div class="modal-box bg-white p-0">
+          <div
+            class="flex flex-col items-center justify-center bg-[#f0f0f0] container py-4 relative"
+          >
+            <form method="dialog" class="absolute right-4 top-4">
+              <button method="dialog" class="outline-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  class="w-8 h-8 stroke-slate-400 hover:stroke-slate-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </form>
+            <div class="flex flex-col gap-4 uppercase text-center">
+              <span class="text-2xl font-lato">Easy Bank</span>
+              <p class="font-robot-slab font-light">landing page</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <img src="./public/images/easy-image.png" alt="easy bank image" />
+            <p class="px-4 text-center">
+              Easy Bank is a landing page website It was built by vanilla js and
+              tailwindcss I built this website to test my skills on tailwind
+            </p>
+            <div
+              class="flex gap-4 justify-center items-center uppercase py-6 lg:pl-4"
+            >
+              <a
+                href="https://easybank-frontend-mentor.netlify.app/"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >visit site</a
+              >
+              <span>or</span>
+              <a
+                href="https://github.com/MuhammedElshreef/easy-bank"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >view source</a
+              >
+            </div>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button class="hover:cursor-default">close</button>
+        </form>
+      </dialog>
+      <!-- end of easy bank modal -->
+      <!-- space tourism bank modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="space_tourism_project" class="modal">
+        <div class="modal-box bg-white p-0">
+          <div
+            class="flex flex-col items-center justify-center bg-[#f0f0f0] container py-4 relative"
+          >
+            <form method="dialog" class="absolute right-4 top-4">
+              <button method="dialog" class="outline-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  class="w-8 h-8 stroke-slate-400 hover:stroke-slate-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </form>
+            <div class="flex flex-col gap-4 uppercase text-center">
+              <span class="text-2xl font-lato">Space tourism</span>
+              <p class="font-robot-slab font-light">multi-page website</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <img
+              src="./public/images/space-tourism-image.png"
+              alt="space tourism image"
+            />
+            <p class="px-4 text-center">
+              Space tourism is a multi-page website and it was my first project
+              with vue It was built by vue and tailwindcss I built this website
+              to practice on vue
+            </p>
+            <div
+              class="flex gap-4 justify-center items-center uppercase py-6 pl-4"
+            >
+              <a
+                href="http://space-tourism-dusky-seven.vercel.app/"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >visit site</a
+              >
+              <span>or</span>
+              <a
+                href="https://github.com/MuhammedElshreef/Space-tourism"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >view source</a
+              >
+            </div>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button class="hover:cursor-default">close</button>
+        </form>
+      </dialog>
+      <!-- end of space tourism  modal -->
+      <!-- fylo  modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="fylo_project" class="modal">
+        <div class="modal-box bg-white p-0">
+          <div
+            class="flex flex-col items-center justify-center bg-[#f0f0f0] container py-4 relative"
+          >
+            <form method="dialog" class="absolute right-4 top-4">
+              <button method="dialog" class="outline-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  class="w-8 h-8 stroke-slate-400 hover:stroke-slate-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </form>
+            <div class="flex flex-col gap-4 uppercase text-center">
+              <span class="text-2xl font-lato">Fylo Bank</span>
+              <p class="font-robot-slab font-light">landing page</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <img src="./public/images/fylo-image.png" alt="fylo  image" />
+            <p class="px-4 text-center">
+              Fylo is a landing page website and it was my first website ever It
+              was built by tailwindcss I built this website to practice on
+              tailwind
+            </p>
+            <div
+              class="flex gap-4 justify-center items-center uppercase py-6 lg:pl-4"
+            >
+              <a
+                href="https://fylo-frontend-mentor-landing-page.netlify.app/"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >visit site</a
+              >
+              <span>or</span>
+              <a
+                href="https://github.com/MuhammedElshreef/fylo-landing-page"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >view source</a
+              >
+            </div>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button class="hover:cursor-default">close</button>
+        </form>
+      </dialog>
+      <!-- end of fylo  modal -->
+      <!-- loop studios -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="loop_studios_project" class="modal">
+        <div class="modal-box bg-white p-0">
+          <div
+            class="flex flex-col items-center justify-center bg-[#f0f0f0] container py-4 relative"
+          >
+            <form method="dialog" class="absolute right-4 top-4">
+              <button method="dialog" class="outline-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  class="w-8 h-8 stroke-slate-400 hover:stroke-slate-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </form>
+            <div class="flex flex-col gap-4 uppercase text-center">
+              <span class="text-2xl font-lato">loop studios</span>
+              <p class="font-robot-slab font-light">landing page</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <img
+              src="./public/images/loopStudios-image.png"
+              alt="loop studios  image"
+            />
+            <p class="px-4 text-center">
+              Loop studios is a landing page website and It was built by vanilla
+              js and tailwindcss I built this website to practice on tailwind
+            </p>
+            <div
+              class="flex gap-4 justify-center items-center uppercase py-6 lg:pl-4"
+            >
+              <a
+                href="https://loopstudios-front.netlify.app/"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >visit site</a
+              >
+              <span>or</span>
+              <a
+                href="https://github.com/MuhammedElshreef/loopStudios"
+                target="_blank"
+                class="px-4 py-2 border-2 border-[#00009c] hover:cursor-pointer hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+                >view source</a
+              >
+            </div>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button class="hover:cursor-default">close</button>
+        </form>
+      </dialog>
+      <!-- end of loop studios modal -->
+      <!-- end of projects modal -->
+    </section>
+    <!-- contact section -->
+    <section id="contact">
+      <div class="bg-light-gray py-24">
+        <div class="flex flex-col items-center justify-center gap-8 group">
+          <div
+            class="animation-down transition-all duration-1000 -translate-y-20 opacity-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="black"
+              class="w-12 h-12 -rotate-45"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+              />
+            </svg>
+          </div>
+          <div class="flex flex-col gap-4 items-center justify-center">
+            <p
+              class="text-black text-3xl font-light uppercase animation transition-all duration-1000 opacity-0"
+            >
+              get in touch!
+            </p>
+            <p class="font-light font-robot-slab text-center text-black">
+              Whether you have an idea for a project or just want to chat, feel
+              free to shoot me an email!
+            </p>
+            <a
+              href="mailto:muhammedelshreef50@gmail.com"
+              class="border-2 border-black px-6 py-2 text-lg font-light font-lato hover:bg-[#00009c] transition-colors duration-300 text-black hover:text-white"
+            >
+              Say Hello
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-16 flex flex-col gap-6 bg-dark-gray">
+        <ul
+          class="flex justify-center items-center gap-2 animation transition-all duration-1000 opacity-0"
+        >
+          <li
+            class="hover:cursor-pointer transition ease-in-out bg-[#333333] hover:bg-gray-600 hover:-translate-y-1 hover:scale-110 duration-300 px-2 py-2"
+          >
+            <a href="https://github.com/MuhammedElshreef" target="_blank">
+              <img src="./public/images/github-icon.svg" alt="github icon" />
+            </a>
+          </li>
+          <li
+            class="hover:cursor-pointer transition ease-in-out bg-[#333333] hover:bg-[#0A66C2] hover:-translate-y-1 hover:scale-110 duration-300 px-2 py-2"
+          >
+            <a
+              href="https://www.linkedin.com/in/muhammed-alsayed-0611bb2a3/"
+              target="_blank"
+            >
+              <img
+                src="./public/images/linkedin-icon.svg"
+                alt="linkedin icon"
+              />
+            </a>
+          </li>
+          <li
+            class="hover:cursor-pointer transition ease-in-out bg-[#333333] hover:bg-[#25D366] hover:-translate-y-1 hover:scale-110 duration-300 px-2 py-2"
+          >
+            <a
+              href="https://api.whatsapp.com/send?phone=218927784849"
+              target="_blank"
+            >
+              <img
+                src="./public/images/whatsup-icon.svg"
+                alt="what's up icon"
+              />
+            </a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <p class="text-light-gray">© Muhammed Alsayed 2023</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
