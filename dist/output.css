@@ -1499,8 +1499,16 @@ html {
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-t-\[1px\] {
   border-top-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-\[\#00009c\] {
@@ -1516,6 +1524,11 @@ html {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .border-gray-600 {
@@ -1536,10 +1549,6 @@ html {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-black\/40 {
-  background-color: rgb(0 0 0 / 0.4);
 }
 
 .bg-black\/60 {
@@ -1570,10 +1579,6 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black\/30 {
-  background-color: rgb(0 0 0 / 0.3);
-}
-
 .bg-\[url\(\'\.\/public\/images\/desk-image\.jfif\'\)\] {
   background-image: url('./public/images/desk-image.jfif');
 }
@@ -1594,8 +1599,8 @@ html {
   background-image: url('./public/images/loopStudios-image.png');
 }
 
-.bg-\[url\(\'\.\/public\/images\/mountain\.jpg\'\)\] {
-  background-image: url('./public/images/mountain.jpg');
+.bg-\[url\(\'\.\/public\/images\/main-bg\.jpg\'\)\] {
+  background-image: url('./public/images/main-bg.jpg');
 }
 
 .bg-\[url\(\'\.\/public\/images\/movie-image\.png\'\)\] {
@@ -1604,18 +1609,6 @@ html {
 
 .bg-\[url\(\'\.\/public\/images\/space-tourism-image\.png\'\)\] {
   background-image: url('./public/images/space-tourism-image.png');
-}
-
-.bg-\[url\(\'\.\/public\/images\/main\.jpg\'\)\] {
-  background-image: url('./public/images/main.jpg');
-}
-
-.bg-\[url\(\'\.\/public\/images\/main-\.jpg\'\)\] {
-  background-image: url('./public/images/main-.jpg');
-}
-
-.bg-\[url\(\'\.\/public\/images\/main-bg\.jpg\'\)\] {
-  background-image: url('./public/images/main-bg.jpg');
 }
 
 .bg-contain {
@@ -1628,14 +1621,6 @@ html {
 
 .bg-fixed {
   background-attachment: fixed;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-left {
-  background-position: left;
 }
 
 .bg-no-repeat {
@@ -1890,10 +1875,6 @@ html {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
-}
-
-.hover\:border-none:hover {
-  border-style: none;
 }
 
 .hover\:border-black:hover {

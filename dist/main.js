@@ -1,6 +1,5 @@
 const navBar = document.getElementById("navBar");
 const burgerBtn = document.getElementById("burger-btn");
-// const burgerMenu = document.getElementById("burger-menu");
 const burgerList = document.getElementById("burger-list");
 burgerList.addEventListener("click", () => {
   burgerList.classList.add("hidden");
@@ -40,7 +39,6 @@ window.addEventListener("load", () => {
 // <=============================fade in animate=============================>
 const fadeAnimateObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("opacity-100");
     }
@@ -51,7 +49,6 @@ animatedElements.forEach((el) => fadeAnimateObserver.observe(el));
 // <=============================fade down animate=============================>
 const fadeDownAnimateObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("opacity-100");
       entry.target.classList.add("translate-y-0");
