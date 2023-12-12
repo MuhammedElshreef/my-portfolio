@@ -1499,16 +1499,8 @@ html {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-t-\[1px\] {
   border-top-width: 1px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 
 .border-\[\#00009c\] {
@@ -1524,11 +1516,6 @@ html {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-gray-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .border-gray-600 {
@@ -1579,36 +1566,36 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/public\/images\/desk-image\.jfif\'\)\] {
-  background-image: url('./public/images/desk-image.jfif');
+.bg-\[url\(\'\.\/public\/images\/desk-image\.webp\'\)\] {
+  background-image: url('./public/images/desk-image.webp');
 }
 
-.bg-\[url\(\'\.\/public\/images\/easy-image\.png\'\)\] {
-  background-image: url('./public/images/easy-image.png');
+.bg-\[url\(\'\.\/public\/images\/easy-image\.webp\'\)\] {
+  background-image: url('./public/images/easy-image.webp');
 }
 
-.bg-\[url\(\'\.\/public\/images\/fylo-image\.png\'\)\] {
-  background-image: url('./public/images/fylo-image.png');
+.bg-\[url\(\'\.\/public\/images\/fylo-image\.webp\'\)\] {
+  background-image: url('./public/images/fylo-image.webp');
 }
 
-.bg-\[url\(\'\.\/public\/images\/knight-image\.png\'\)\] {
-  background-image: url('./public/images/knight-image.png');
+.bg-\[url\(\'\.\/public\/images\/knight-image\.webp\'\)\] {
+  background-image: url('./public/images/knight-image.webp');
 }
 
-.bg-\[url\(\'\.\/public\/images\/loopStudios-image\.png\'\)\] {
-  background-image: url('./public/images/loopStudios-image.png');
+.bg-\[url\(\'\.\/public\/images\/loopStudios-image\.webp\'\)\] {
+  background-image: url('./public/images/loopStudios-image.webp');
 }
 
-.bg-\[url\(\'\.\/public\/images\/main-bg\.jpg\'\)\] {
-  background-image: url('./public/images/main-bg.jpg');
+.bg-\[url\(\'\.\/public\/images\/main-bg\.webp\'\)\] {
+  background-image: url('./public/images/main-bg.webp');
 }
 
-.bg-\[url\(\'\.\/public\/images\/movie-image\.png\'\)\] {
-  background-image: url('./public/images/movie-image.png');
+.bg-\[url\(\'\.\/public\/images\/movie-image\.webp\'\)\] {
+  background-image: url('./public/images/movie-image.webp');
 }
 
-.bg-\[url\(\'\.\/public\/images\/space-tourism-image\.png\'\)\] {
-  background-image: url('./public/images/space-tourism-image.png');
+.bg-\[url\(\'\.\/public\/images\/space-tourism-image\.webp\'\)\] {
+  background-image: url('./public/images/space-tourism-image.webp');
 }
 
 .bg-contain {
