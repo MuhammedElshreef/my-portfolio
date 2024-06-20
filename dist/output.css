@@ -1363,6 +1363,11 @@ html {
   z-index: 50;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -1395,12 +1400,36 @@ html {
   height: 2rem;
 }
 
+.h-\[1px\] {
+  height: 1px;
+}
+
 .h-\[200px\] {
   height: 200px;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[150px\] {
+  height: 150px;
+}
+
+.h-\[350px\] {
+  height: 350px;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-12 {
@@ -1409,6 +1438,10 @@ html {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-6 {
@@ -1556,6 +1589,11 @@ html {
   background-color: rgb(34 34 34 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 .bg-light-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(240 240 240 / var(--tw-bg-opacity));
@@ -1564,6 +1602,10 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-\[url\(\'\.\/public\/images\/desk-image\.webp\'\)\] {
@@ -1590,6 +1632,10 @@ html {
   background-image: url('./public/images/main-bg.webp');
 }
 
+.bg-\[url\(\'\.\/public\/images\/mataa-logo\.webp\'\)\] {
+  background-image: url('./public/images/mataa-logo.webp');
+}
+
 .bg-\[url\(\'\.\/public\/images\/movie-image\.webp\'\)\] {
   background-image: url('./public/images/movie-image.webp');
 }
@@ -1610,6 +1656,14 @@ html {
   background-attachment: fixed;
 }
 
+.bg-center {
+  background-position: center;
+}
+
+.bg-top {
+  background-position: top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1620,6 +1674,11 @@ html {
 
 .stroke-slate-400 {
   stroke: #94a3b8;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-0 {
@@ -1715,6 +1774,10 @@ html {
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .text-\[\#747474\] {
   --tw-text-opacity: 1;
   color: rgb(116 116 116 / var(--tw-text-opacity));
@@ -1748,6 +1811,10 @@ html {
 .text-light-gray {
   --tw-text-opacity: 1;
   color: rgb(240 240 240 / var(--tw-text-opacity));
+}
+
+.text-transparent {
+  color: transparent;
 }
 
 .text-white {
@@ -1919,6 +1986,16 @@ html {
 
 .group:hover .group-hover\:h-3\/4 {
   height: 75%;
+}
+
+.group:hover .group-hover\:bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {
