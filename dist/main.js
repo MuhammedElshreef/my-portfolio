@@ -57,3 +57,6 @@ const fadeDownAnimateObserver = new IntersectionObserver((entries) => {
 });
 const animationDownElements = document.querySelectorAll(".animation-down");
 animationDownElements.forEach((el) => fadeDownAnimateObserver.observe(el));
+
+// copyright year
+document.getElementById("current-year").textContent = new Date().getFullYear();
